@@ -78,6 +78,7 @@ $(document).on('turbolinks:load', function() {
     
     //タッチして動かしている時
     function onTouchMove(e) {
+      e.preventDefault();
       var rect = e.target.getBoundingClientRect();
       var X = ~~(e.touches[0].clientX - rect.left);
       var Y = ~~(e.touches[0].clientY - rect.top);
