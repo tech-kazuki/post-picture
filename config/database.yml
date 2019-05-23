@@ -24,7 +24,7 @@ default: &default
 development:
   <<: *default
   database: post-picture_development
-  password: 11kazuki
+  password:
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -83,3 +83,4 @@ production:
   <<: *default
   database: post-picture_production
   username: post-picture
+  encoding: unicode
