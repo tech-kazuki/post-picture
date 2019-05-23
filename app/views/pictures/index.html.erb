@@ -1,0 +1,11 @@
+<div class="right_content">
+  <div class="main_title">投稿一覧</div>
+  <%= link_to new_picture_path, class: 'floating_link' do %>
+    <div class="floating_btn">
+      <%= icon 'fas', 'paint-brush', class: 'paint_icon' %>
+    </div>
+  <% end %>
+  <div class="contents">
+    <%= render @pictures %>
+  </div>
+</div>

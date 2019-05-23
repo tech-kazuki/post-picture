@@ -1,0 +1,55 @@
+<div class="new_picture">
+  <div class="draw-area_box">
+    <canvas id="draw-area" width="700" height="500"></canvas>
+    <div id="canvasmenu_color">
+      <div class="menuicon" id="color000000" style="background-color:#000000"></div>
+      <div class="menuicon" id="color696969" style="background-color:#696969"></div>
+      <div class="menuicon" id="colora9a9a9" style="background-color:#a9a9a9"></div>
+      <div class="menuicon" id="colordcdcdc" style="background-color:#dcdcdc"></div>
+      <div class="menuicon" id="colorffffff" style="background-color:#ffffff"></div>
+      <div class="menuicon" id="colorff0000" style="background-color:#ff0000"></div>
+      <div class="menuicon" id="colorff007f" style="background-color:#ff007f"></div>
+      <div class="menuicon" id="colorff00ff" style="background-color:#ff00ff"></div>
+      <div class="menuicon" id="color7f00ff" style="background-color:#7f00ff"></div>
+      <div class="menuicon" id="color0000ff" style="background-color:#0000ff"></div>
+      <div class="menuicon" id="color007fff" style="background-color:#007fff"></div>
+      <div class="menuicon" id="color00ffff" style="background-color:#00ffff"></div>
+      <div class="menuicon" id="color00ff7f" style="background-color:#00ff7f"></div>
+      <div class="menuicon" id="color3cb371" style="background-color:#3cb371"></div>
+      <div class="menuicon" id="colorffff00" style="background-color:#ffff00"></div>
+      <div class="menuicon" id="colorffd3a8" style="background-color:#ffd3a8"></div>
+      <div class="menuicon" id="colorff7f00" style="background-color:#ff7f00"></div>
+    </div>
+  </div>
+  <div id="canvasmenu_config">
+      <div class="menuicon under--left" id="clear" style="background-color:#ffffff">リセット</div>
+      <div class="menuicon under--left" id="colorffffff" style="background-color:#ffffff">消しゴム</div>
+      <div class="menuicon under--left" id="fill" style="background-color:#ffffff">塗り潰し</div>
+      <pre> 太さ</pre>
+      <div class="menuicon under--midle" id="size26" style="background-color:#ffffff">26</div>
+      <div class="menuicon under--midle" id="size20" style="background-color:#ffffff">20</div>
+      <div class="menuicon under--midle" id="size14" style="background-color:#ffffff">14</div>
+      <div class="menuicon under--midle" id="size9" style="background-color:#ffffff">9</div>
+      <div class="menuicon under--midle" id="size5" style="background-color:#ffffff">5</div>
+      <div class="menuicon under--midle" id="size2" style="background-color:#ffffff">2</div>
+      <pre> 透明度</pre>
+      <div class="menuicon under" id="alpha10" style="background-color:rgba(0,0,0,1.0)"></div>
+      <div class="menuicon under" id="alpha7" style="background-color:rgba(0,0,0,0.7)"></div>
+      <div class="menuicon under" id="alpha5" style="background-color:rgba(0,0,0,0.5)"></div>
+      <div class="menuicon under" id="alpha2" style="background-color:rgba(0,0,0,0.2)"></div>
+  </div>
+  <%= form_with model: Picture.new, local: true, id: "picture_form" do |f| %>
+    <div class="form_field">
+      <%= f.label :user_name, 'ニックネーム', class: "form_label"%>
+      <%= f.text_field :user_name, placeholder: "例）お絵かき太郎", class: "form_title" %>
+      <%= f.label :title, 'タイトル', class: "form_label"%>
+      <%= f.text_field :title, placeholder: "例）初めての作品", class: "form_title" %>
+    </div>
+    <div class="form_field">
+      <%= f.label :detail, '説明文', class: "form_label"%>
+      <%= f.text_area :detail, placeholder: "例）真夏の太陽をイメージしました。", class: "form_detail"%>
+    </div>
+      <%= f.text_field :image, type: 'hidden', value: '' %>
+      <%= f.submit 'お絵かき終了', class: "submit_btn"%>
+  <% end %>
+</div>

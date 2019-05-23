@@ -1,0 +1,91 @@
+.right_content {
+  padding-top: 48px;
+  width: 100vw;
+  background-color: #fff;
+  .main_title {
+    font-size: 48px;
+    text-align: center;
+    color: #fff;
+    background-color: $Primary;
+  }
+  .contents {
+    width: 93vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+    .content_over_link {
+      @include link;
+      color: black;
+      margin: 20px;
+      border-radius: 2px;
+      background-color: white;
+      .content {
+        width: 350px;
+        height: 400px;
+        position: relative;
+        box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.12), 0 2px 3px 1px rgba(0, 0, 0, 0.24);
+        &__top {
+          height: 240px;
+          background-position: center;
+          background-size: 100% auto;
+          box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.24) inset;
+        }
+        &__btm {
+          background-color: #fff;
+          height: 136px;
+          &__title {
+            margin: 10px 20px 0;
+            min-height: 40px;
+            font-size: 18px;
+            line-height: 2rem;
+            font-weight: bold;
+          }
+          &__detail {
+            margin: 0 28px 20px;
+            font-size: 14px;
+            height: 53px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.2rem;
+          }
+          &__user {
+            text-align: right;
+            padding-right: 20px;
+            &__name {
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+        hr {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.floating_link {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 5;
+  .floating_btn {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: $Secondary;
+    text-align: center;
+    line-height: 160px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+    .paint_icon {
+      color: #000;
+      font-size: 3.5rem;
+    }
+  }
+}
+
+.floating_btn:hover {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,58 @@
+.show_box {
+  background-color: #f5deb3;
+  .show {
+    padding: 70px 0;
+    &__picture {
+      background-image: image-url("gaku.jpg");
+      padding: 60px 65px;
+      width: 750px;
+      height: 550px;
+      margin: 0 auto;
+      box-shadow: 5px 5px 5px black;
+    }
+    &__user {
+      width: 270px;
+      height: 80px;
+      background: -moz-linear-gradient(top left,#ffedab, goldenrod); 
+      background: -webkit-linear-gradient(top left,#ffedab, goldenrod); 
+      background: linear-gradient(to bottom right, #ffedab, goldenrod); 
+      margin: 20px auto;
+      box-shadow: 3px 3px 5px black;
+      text-align: center;
+      &__name {
+        font-family: serif;
+        font-size: 12px;
+      }
+      &__title {
+        font-family: serif;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      &__time {
+        font-family: serif;
+        font-size: 12px;
+        padding-top: 5px;
+      }
+    }
+    &__detail {
+      width: 700px;
+      min-height: 100px;
+      background-color: #f7f6f5;
+      box-shadow: 2px 2px 5px gray;
+      margin: 10px auto;
+      padding: 10px 10px;
+      font-family: serif;
+    }
+    .twitter {
+      width: 60px;
+      margin: 0 auto;
+    }
+    .delete_link {
+      text-decoration: none;
+      color: gray;
+      display: block;
+      padding-top: 20px;
+      text-align: center;
+    }
+  }
+}

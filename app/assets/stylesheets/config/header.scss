@@ -1,0 +1,23 @@
+.header {
+  height: 48px;
+  width: 100vw;
+  background-color: $Primary_D;
+  color: #fff;
+  line-height: 48px;
+  box-shadow: 0 0 5px black;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  &__link {
+    @include header_link;
+    &--title {
+      text-decoration: none;
+      border: none;
+      h1 {
+        font-size: 36px;
+        color: #fff;
+      }
+    }
+  }
+}
