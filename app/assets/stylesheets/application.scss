@@ -1,0 +1,14 @@
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import 'config/reset';
+@import 'config/colors';
+@import 'config/mixin';
+@import 'config/header';
+@import 'pictures/index';
+@import 'pictures/new';
+@import 'pictures/show';
+
+body {
+  height: 100vh;
+  width: 100vw;
+}

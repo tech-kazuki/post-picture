@@ -1,0 +1,17 @@
+@mixin shadow {
+  box-shadow: 0 0 5px gray;
+}
+
+@mixin link {
+  text-decoration: none;
+}
+
+@mixin header_link {
+  text-decoration: none;
+  color: #fff;
+  margin: 5px 10px;
+  border: 2px solid;
+  border-radius: 5px;
+  line-height: 38px;
+  padding: 0 5px;
+}
