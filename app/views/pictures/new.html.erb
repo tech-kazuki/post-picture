@@ -24,7 +24,7 @@
   <div id="canvasmenu_config">
       <div class="menuicon under--left" id="clear" style="background-color:#ffffff">リセット</div>
       <div class="menuicon under--left" id="colorffffff" style="background-color:#ffffff">消しゴム</div>
-      <div class="menuicon under--left" id="fill" style="background-color:#ffffff">塗り潰し</div>
+      <div class="menuicon under--left" id="fill" style="background-color:#ffffff">全塗り</div>
       <pre> 太さ</pre>
       <div class="menuicon under--midle" id="size26" style="background-color:#ffffff">26</div>
       <div class="menuicon under--midle" id="size20" style="background-color:#ffffff">20</div>
@@ -50,6 +50,6 @@
       <%= f.text_area :detail, placeholder: "例）真夏の太陽をイメージしました。", class: "form_detail"%>
     </div>
       <%= f.text_field :image, type: 'hidden', value: '' %>
-      <%= f.submit 'お絵かき終了', class: "submit_btn"%>
+      <%= f.submit 'お絵かきを投稿する', class: "submit_btn"%>
   <% end %>
 </div>
