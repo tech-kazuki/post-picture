@@ -1,7 +1,6 @@
 <a class="content_over_link" href="<%= picture_path(picture) %>">
   <div class="content">
-    <section class="content__top" style="background-image: url('<%= picture.image %>')">
-    </section>
+    <%= image_tag picture.image, class: "content__top" %>
     <section class="content__btm">
       <div class="content__btm__title"><%= picture.title %></div>
       <p class="content__btm__detail"><%= picture.detail %></p>

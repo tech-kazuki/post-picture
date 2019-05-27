@@ -9,27 +9,36 @@
     background-color: $Primary;
   }
   .contents {
-    width: 93vw;
+    width: 1020px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 150px;
+    @include tab {
+      width: 90vw;
+    }
     .content_over_link {
-      @include link;
+      text-decoration: none;
       color: black;
       margin: 20px;
       border-radius: 2px;
       background-color: white;
+      width: 300px;
+      @include tab {
+        margin: 3%;
+        width: 44%;
+      }
       .content {
-        width: 350px;
-        height: 400px;
         position: relative;
         box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.12), 0 2px 3px 1px rgba(0, 0, 0, 0.24);
         &__top {
-          height: 240px;
-          background-position: center;
-          background-size: 100% auto;
+          width: 100%;
+          height: 220px;
+          object-fit: contain;
           box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.24) inset;
+          @include tab {
+            height: 40%;
+          }
         }
         &__btm {
           background-color: #fff;
@@ -42,7 +51,7 @@
             font-weight: bold;
           }
           &__detail {
-            margin: 0 28px 20px;
+            margin: 0 28px;
             font-size: 14px;
             height: 53px;
             overflow: hidden;

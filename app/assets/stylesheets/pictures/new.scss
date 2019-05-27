@@ -1,10 +1,14 @@
 .draw-area_box {
   margin: 0 auto;
-  width: 700px;
+  width: 900px;
   display: flex;
   cursor: crosshair;
-  #draw-area {
-    background-color: #fff;
+  #canvas_box {
+    width: 100%;
+    height: 700px;
+    #draw-area {
+      background-color: #fff;
+    }
   }
 }
 

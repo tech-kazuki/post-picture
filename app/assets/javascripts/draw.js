@@ -6,8 +6,12 @@ $(document).on('turbolinks:load', function() {
     $(this).css('opacity', '1.0');
   });
 
+  var canvasBox = document.getElementById('canvas_box');
   var canvas = document.getElementById('draw-area');
   if (canvas) {
+    
+    canvas.width = canvasBox.clientWidth;
+    canvas.height = canvasBox.clientHeight;
 
     var defosize = 7;
     var defocolor = "#555555";
