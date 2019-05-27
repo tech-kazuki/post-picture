@@ -3,6 +3,8 @@
     <div id="canvas_box">
       <canvas id="draw-area"></canvas>
     </div>
+    <input id="nav-input" type="checkbox" class="nav-unshown">
+    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
     <div id="canvasmenu_color">
       <div class="color_top">
         <div class="menuicon" id="color000000" style="background-color:#000000"></div>
@@ -48,7 +50,6 @@
         <div class="menuicon under--midle" id="size2" style="background-color:#ffffff">2px</div>
       </div>
     </div>
-    <input id="nav-input" type="checkbox" class="nav-unshown">
     <label class='nav-open' for="nav-input" ><span class="span_color">カラー</span><br /><%= icon 'fas', 'palette', class: 'color_icon' %></label>
   </div>
   <%= form_with model: Picture.new, local: true, id: "picture_form" do |f| %>
