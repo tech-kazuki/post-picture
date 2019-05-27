@@ -9,6 +9,10 @@
   position: fixed;
   top: 0;
   text-align: center;
+  @include tab {
+    height: 100px;
+    line-height: 100px;
+  }
   &__link {
     @include header_link;
     &--title {

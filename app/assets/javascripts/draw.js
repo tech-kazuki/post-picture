@@ -22,7 +22,6 @@ $(document).on('turbolinks:load', function() {
     var ctx = canvas.getContext('2d');
     ctx.beginPath();
     ctx.fillStyle = "#ffffff";
-    ctx.fillRect(0, 0, 700, 500);
 
     canvas.addEventListener('mousemove', onMove, false);
     canvas.addEventListener('mousedown', onClick, false);
@@ -142,14 +141,14 @@ $(document).on('turbolinks:load', function() {
       }
       if (thisId.indexOf("fill") + 1) {
         ctx.fillStyle = defocolor;
-        ctx.fillRect(0, 0, 700, 500);
+        ctx.fillRect(0, 0, canvasBox.clientWidth, canvasBox.clientHeight);
       }
       if (thisId.indexOf("clear") + 1) {
           if (confirm("すべて消去しますか？")) {
           ctx.beginPath();
           ctx.fillStyle = "#fff";
           ctx.globalAlpha = 1.0;
-          ctx.fillRect(0, 0, 700, 500);
+          ctx.fillRect(0, 0, canvasBox.clientWidth, canvasBox.clientHeight);
         }
       }
     }

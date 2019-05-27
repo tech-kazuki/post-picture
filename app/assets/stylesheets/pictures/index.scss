@@ -2,6 +2,9 @@
   padding-top: 48px;
   width: 100vw;
   background-color: #fff;
+  @include tab {
+    padding-top: 100px;
+  }
   .main_title {
     font-size: 48px;
     text-align: center;
