@@ -52,6 +52,9 @@
             font-size: 18px;
             line-height: 2rem;
             font-weight: bold;
+            @include tab {
+              font-size: 22px;
+            }
           }
           &__detail {
             margin: 0 28px;
@@ -60,6 +63,9 @@
             overflow: hidden;
             text-overflow: ellipsis;
             line-height: 1.2rem;
+            @include tab {
+              font-size: 18px;
+            }
           }
           &__user {
             text-align: right;
@@ -67,6 +73,9 @@
             &__name {
               font-size: 14px;
               line-height: 20px;
+              @include tab {
+                font-size: 18px;
+              }
             }
           }
         }
