@@ -1,24 +1,20 @@
-# README
+# Post-picture
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+個人開発アプリケーションです。
+canvasを利用したペイントのようなものを実装、お絵かきを投稿できるアプリケーションです。
 
-* Ruby version
+## Description
 
-* System dependencies
+＊使用言語
+Ruby/Ruby on Rails/JavaScript/HTML(canvas)/SASS
 
-* Configuration
+タブレット端末、スマートフォンでの操作を想定し、全てのページをレスポンシブ対応
+マウス操作、タッチ操作ともに描画が可能
 
-* Database creation
+## Demo
 
-* Database initialization
+herokuにてデプロイしています。
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[こちら](https://post-pict.herokuapp.com/)からお楽しみください。
